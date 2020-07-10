@@ -1,0 +1,279 @@
+body {
+  margin: 0 0 0 0;
+}
+
+header {
+  background-color: #d1f6c1;
+}
+
+footer {
+  background-color: #d1f6c1;
+}
+
+.navbar {
+  display: inline;
+  margin-right: 10px;
+}
+
+.navigation {
+  float: right;
+}
+
+.logoimg {
+  width: 70px;
+  height: 70px;
+}
+
+.logo, .btmaddress {
+  position: absolute;
+}
+
+header {
+  padding-bottom: 100px;
+}
+
+footer {
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* topheading css */
+.top {
+  text-align: center;
+}
+
+.tophead {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+input[type="text"] {
+  width: 350px;
+  height: 30px;
+  padding-right: 50px;
+}
+
+input[type="submit"] {
+  margin-left: -155px;
+  height: 30px;
+  width: 150px;
+  background-color: #d92027;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.simpletxt {
+  font-size: 15px;
+  color: #696969;
+}
+
+.billgates {
+  width: 80%;
+  height: 650px;
+  border-radius: 20px;
+}
+
+.tabcontainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.tabbelow {
+  background-color: #e1f2fb;
+  padding: 0;
+  margin: 0;
+}
+
+.tabup {
+  background-color: #e1f2fb;
+  height: 200px;
+}
+
+.tab {
+  float: right;
+  width: 20%;
+  height: 300px;
+  padding-left: 5%;
+}
+
+.tab button {
+  width: 100%;
+  outline: none;
+  text-align: left;
+  transition: 0.3s;
+  border: none;
+  background-color: inherit;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #e1f2fb;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+}
+
+.tabimg {
+  width: 100%;
+  height: 100%;
+}
+
+.imagestab {
+  width: 40%;
+  height: 25%;
+}
+
+/* customers css */
+.customers {
+  width: 90%;
+  height: 40%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.slides {}
+
+.slideimg {
+  width: 90%;
+  height: 650px;
+  ;
+}
+
+.nxt, .prev {
+  font-size: 50px;
+  color: black;
+  position: absolute;
+  margin-top: -325px;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.nxt:hover, .prev:hover {
+  background-color: grey;
+}
+
+.nxt {
+  margin-left: 78%;
+}
+
+.prev {
+  float: left;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.active {
+  background-color: grey;
+}
+
+/* connectservices css */
+.connect {
+  background-color: #e1f2fb;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 300px;
+  position: absolute;
+  text-align: center;
+}
+
+.column2 {
+  float: right;
+  width: 50%;
+  height: 300px;
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.servicesimg {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+
+/* bottom css */
+.btmlists {
+  float: right;
+}
+
+.listbtm {
+  list-style-type: none;
+  display: inline-block;
+  /* *display: inline; */
+  /* zoom: 1 */
+}
+
+.navbarbtm {
+  padding-bottom: 5px;
+}
+
+.bottom {
+  padding-top: 50px;
+  padding-bottom: 200px;
+}
+
+.copyright {
+  padding-top: 50px;
+  border-top: 1px solid rgb(105, 105, 105);
+}
+
+.btmcreate {
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #4cbbb9;
+  height: 120px;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.btmcreatebtn {
+  margin-left: 30px;
+  height: 30px;
+  width: 150px;
+  background-color: #d92027;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
