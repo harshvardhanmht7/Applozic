@@ -37,7 +37,6 @@ setInterval(
 
 
 
-//slides js
 
 
 
@@ -58,11 +57,14 @@ function clickslide(n) {
   if (count1 === -1) {
     count1 = 2;
   }
+  var totalnames = document.getElementsByClassName('imgname');
+  var totalpostions = document.getElementsByClassName('imgpostion');
   var totalsides = document.getElementsByClassName('slideimg');
   var totaldots = document.getElementsByClassName('dot');
   for (var i = 0; i < totalsides.length; i++) {
     totalsides[i].style.display = "none";
-
+    totalnames[i].style.display = "none";
+    totalpostions[i].style.display = "none";
   }
   for (var i = 0; i < totaldots.length; i++) {
 
@@ -70,6 +72,8 @@ function clickslide(n) {
   }
 
   totalsides[count1].style.display = "block";
+  totalnames[count1].style.display = "block";
+  totalpostions[count1].style.display = "block";
   totaldots[count1].className += " active";
 
 }
