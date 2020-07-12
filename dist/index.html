@@ -111,92 +111,29 @@ font-family: sans-serif;">
 
 
 
-  <div class="slide">
-
-      <div class="tabimg">
 
 
-      <svg  class="tabimgsvg" width="100%" height="100%">
+  <div class="galleryContainer">
+      <div class="slideShowContainer">
 
-        <defs>
-          <filter id="dropshadow" height="130%">
-        <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
-        <feOffset dx="2" dy="2" result="offsetblur"/>
-        <feComponentTransfer>
-          <feFuncA type="linear" slope="0.5"/>
-        </feComponentTransfer>
-        <feMerge>
-          <feMergeNode/>
-          <feMergeNode in="SourceGraphic"/>
-        </feMerge>
-        </filter>
+          <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div>
+          <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+          <div class="imageHolder">
+              <img src="images/slideimages/sunderp.svg">1366X768
 
+          </div>
+          <div class="imageHolder">
+              <img src="images/slideimages/mark.svg">
 
-          <pattern id="image" x="0%" y="0%" height="100%" width="100%"
-                   viewBox="0 0 512 512">
+          </div>
+          <div class="imageHolder">
+              <img src="images/slideimages/satya.svg">
 
-          <image class="slideimg"  class="image2" y="0%" width="512" height="512"  xlink:href="images/slideimages/sunder.png"></image>
-            <image class="slideimg" class="image3" y="0%" width="512" height="512"  xlink:href="images/slideimages/satya.png"></image>
-            <image class="slideimg" class="image1" y="0%" width="512" height="512"  xlink:href="images/slideimages/mark.png"></image>
-          </pattern>
-        </defs>
+          </div>
 
-
-
-
-       <rect width="60%" height="40%" x=20% y=35% style="fill:white" filter="url(#dropshadow)" />
-
-        <rect width="50%" height="60%" x=25% y=25% style="fill:rgb(255,255,255)" filter="url(#dropshadow)" />
-
-
-
-
-    <circle id="sd" class="medium" cx="50%" cy="20%" r="7%" fill="url(#image)" filter="url(#dropshadow)" />
-
-
-  <svg viewBox="0 0 1200 500">
-    <text  y="190">
-
-            <tspan class="imgname" class="image2name" x="45%" style="font-weight: bold;font-size:20" >Sunder Pichai</tspan>
-            <tspan class="imgname" class="image3name" x="46%" style="font-weight: bold;font-size:20" >Satya Nadela</tspan>
-            <tspan class="imgname" class="image1name" x="44%" style="font-weight: bold;font-size:20" >Mark Zuckerberg</tspan>
-
-            <tspan class="imgpostion" class="image2postion"  x="48%" dy="20" style="font-weight: bold;font-size:20;fill:#5c2a9d;" >Google</tspan>
-             <tspan class="imgpostion" class="image3postion"  x="47%" dy="20" style="font-weight: bold;font-size:20;fill:#5c2a9d;" >Microsoft</tspan>
-             <tspan class="imgpostion" class="image1postion" x="47%" dy="20" style="font-weight: bold;font-size:20;fill:#5c2a9d;" >Facebook</tspan>
-
-
-
-            <tspan x="30%" dy="40" style="font-size:20;fill:#706c61;" >I just wanted to share a quick note and let you know that</tspan>
-            <tspan x="30%" dy="23" style="font-size:20;fill:#706c61;">You guys do a really good job.I'am glad that I decided</tspan>
-            <tspan x="30%" dy="23"style="font-size:20;fill:#706c61;" > to work with you.It's great how  easliy you manage and update</tspan>
-            <tspan x="30%" dy="23" style="font-size:20;fill:#706c61;" >website.I never had any problem at all. </tspan>
-        </text>
-  </svg>
-
-
-   </svg>
-
-
-
-
-
+      </div>
+      <div id="dotsContainer"></div>
   </div>
-  <a class="nxt" onclick="moveslide(1)">&#10095;</a>
-  <a class="prev" onclick="moveslide(-1)">&#10094;</a>
-
-
-
-  <div class="alldots" style="margin-left:48%;">
-    <span class="dot" onclick="clickslide(0)"></span>
-    <span class="dot" onclick="clickslide(1)"></span>
-    <span class="dot" onclick="clickslide(2)"></span>
-  </div>
-
-  </div>
-
-
-
 
 
 
