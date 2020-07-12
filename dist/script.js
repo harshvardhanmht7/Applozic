@@ -39,47 +39,75 @@ setInterval(
 // slide js
 
 
-var count1 = 0;
 
-function moveslide(n) {
-  count1 = count1 + n;
-  clickslide(count1);
+
+
+var slideIndex,slides,dots,captionText;
+function initGallery(){
+    slideIndex = 0;
+    slides=document.getElementsByClassName("imageHolder");
+    slides[slideIndex].style.opacity=1;
+
+
+
+
+    //add dots
+    dots=[];
+    var dotsContainer=document.getElementById("dotsContainer"),i;
+    for (i = 0; i < slides.length; i++) {
+        var dot=document.createElement("span");
+        dot.classList.add("dots");
+        dotsContainer.append(dot);
+        dot.setAttribute("onclick","moveSlide("+i+")");
+        dots.push(dot);
+    }
+    dots[slideIndex].classList.add("active");
 }
+initGallery();
+function plusSlides(n) {
+    moveSlide(slideIndex+n);
+}
+function moveSlide(n){
+    var i;
+    var current,next;
+    var moveSlideAnimClass={
+          forCurrent:"",
+          forNext:""
+    };
+    var slideTextAnimClass;
+    if(n>slideIndex) {
+        if(n >= slides.length){n=0;}
+        moveSlideAnimClass.forCurrent="moveLeftCurrentSlide";
+        moveSlideAnimClass.forNext="moveLeftNextSlide";
+        slideTextAnimClass="slideTextFromTop";
+    }else if(n<slideIndex){
+        if(n<0){n=slides.length-1;}
+        moveSlideAnimClass.forCurrent="moveRightCurrentSlide";
+        moveSlideAnimClass.forNext="moveRightPrevSlide";
+        slideTextAnimClass="slideTextFromBottom";
+    }
+
+    if(n!=slideIndex){
+        next = slides[n];
+        current=slides[slideIndex];
+        for (i = 0; i < slides.length; i++) {
+            slides[i].className = "imageHolder";
+            slides[i].style.opacity=0;
+            dots[i].classList.remove("active");
+        }
+        current.classList.add(moveSlideAnimClass.forCurrent);
+        next.classList.add(moveSlideAnimClass.forNext);
+        dots[n].classList.add("active");
+        slideIndex=n;
 
 
-function clickslide(n) {
-
-  count1 = n;
-  if (count1 === 3) {
-    count1 = 0;
-  }
-  if (count1 === -1) {
-    count1 = 2;
-  }
-  var totalnames = document.getElementsByClassName('imgname');
-  var totalpostions = document.getElementsByClassName('imgpostion');
-  var totalsides = document.getElementsByClassName('slideimg');
-  var totaldots = document.getElementsByClassName('dot');
-  for (var i = 0; i < totalsides.length; i++) {
-    totalsides[i].style.display = "none";
-    totalnames[i].style.display = "none";
-    totalpostions[i].style.display = "none";
-  }
-  for (var i = 0; i < totaldots.length; i++) {
-
-    totaldots[i].className = totaldots[i].className.replace(" active", "");
-  }
-
-  totalsides[count1].style.display = "block";
-  totalnames[count1].style.display = "block";
-  totalpostions[count1].style.display = "block";
-  totaldots[count1].className += " active";
+    }
 
 }
-
-
-clickslide(0);
-
-setInterval(function() {
-  moveslide(1)
-}, 6000);
+var timer=null;
+function setTimer(){
+    timer=setInterval(function () {
+        plusSlides(1) ;
+    },6000);
+}
+setTimer();
