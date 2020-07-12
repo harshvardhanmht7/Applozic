@@ -44,48 +44,51 @@ a {
 /* topheading css */
 .top {
   text-align: center;
+  width: 100%;
+}
+.createform{
+  width: 100%;
 }
 
 .tophead {
-  font-size: 30px;
+  font-size: 2vw;
   font-family: sans-serif;
 }
 
 input[type="text"] {
-  width: 350px;
+  width: 30%;
   height: 30px;
   padding-right: 50px;
 }
 
 input[type="submit"] {
-  margin-left: -155px;
+  margin-left: -10.5%;
   height: 30px;
-  width: 150px;
+  width: 10%;;
   background-color: #d92027;
-  font-size: 12px;
+  font-size: 0.9vw;
   padding-top: 5px;
   padding-bottom: 10px;
   padding-left: 10px;
   padding-right: 10px;
   color: #ffffff;
   cursor: pointer;
+
 }
 
 .simpletxt {
-  font-size: 15px;
+  font-size: 1.2vw;
   color: #696969;
 }
 
-.billgates {
-  width: 80%;
-  height: 650px;
-  border-radius: 20px;
+.billgates{
+  width: 100%;
+  height: auto;
 }
 
-.tabcontainer {
-  margin-left: 10%;
-  margin-right: 10%;
-}
+
+/*
+tab css */
 
 .tabbelow {
   background-color: #e1f2fb;
@@ -98,11 +101,35 @@ input[type="submit"] {
   height: 200px;
 }
 
+
+.tabcontainer {
+
+  width: 100%;
+  background-color: #e1f2fb;
+  height: 50%;
+}
+
+
 .tab {
   float: right;
   width: 20%;
-  height: 300px;
-  margin-left:  5%;
+  height: auto;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+
+
+.tabcontent {
+  width:50%;
+  max-height: 580px;
+}
+
+.imagestab {
+  padding-top: 10%;
+  width: 80%;
+
+  padding-left: 10%;
 }
 
 .tab button {
@@ -113,41 +140,28 @@ input[type="submit"] {
   border: none;
   background-color: inherit;
   padding: 14px 28px;
-  font-size: 16px;
+  font-size: 1vw;
   cursor: pointer;
   display: inline-block;
 }
 
+
+
 .tab button:hover {
-  background-color: #ddd;
+  background-color: #f4f6ff;
 }
 
 .tab button.active {
-  background-color: #e1f2fb;
+  background-color: #84a9ac;
 }
 
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  width: 70%;
-  border-left: none;
-  height: 400px;
-  width: 700px;
-  position: absolute;
-}
 
-.tabimg {
-  width: 100%;
-  height: 100%;
-}
-
-.imagestab {
-  width: 40%;
-  height: 25%;
-  margin-right: 5%;
-}
 
 /* slides css */
+
+
+
+
 
 
 
@@ -219,7 +233,7 @@ input[type="submit"] {
 .column {
   float: left;
   width: 50%;
-  height: 300px;
+  max-height: 300px;
   position: absolute;
   text-align: center;
 }
@@ -244,19 +258,52 @@ input[type="submit"] {
 }
 
 /* bottom css */
+
+.btmcreate {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #4cbbb9;
+  width: 80%;
+  height:8vw;
+  border-radius: 10px;
+  margin-bottom: 100px;
+}
+
+.btmcreatebtn {
+  margin-left: 20%;
+  margin-right: 10%;
+  height: auto;
+  width: 12vw;
+  background-color: #d92027;
+  font-size: 0.8vw;
+  padding-top: 7px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+
+
+
 .btmlists {
   float: right;
+  
 }
 
 .listbtm {
   list-style-type: none;
   display: inline-block;
-  /* *display: inline; */
-  /* zoom: 1 */
+  font-size: 1vw;
+
 }
 
 .navbarbtm {
   padding-bottom: 5px;
+  font-size: 1vw;
 }
 
 .bottom {
@@ -267,27 +314,4 @@ input[type="submit"] {
 .copyright {
   padding-top: 50px;
   border-top: 1px solid rgb(105, 105, 105);
-}
-
-.btmcreate {
-  margin-left: 100px;
-  margin-right: 100px;
-  background-color: #4cbbb9;
-  height: 120px;
-  border-radius: 10px;
-  margin-bottom: 100px;
-}
-
-.btmcreatebtn {
-  margin-left: 30px;
-  height: 30px;
-  width: 150px;
-  background-color: #d92027;
-  font-size: 12px;
-  padding-top: 5px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #ffffff;
-  cursor: pointer;
 }
