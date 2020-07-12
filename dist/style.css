@@ -91,13 +91,15 @@ input[type="submit"] {
 tab css */
 
 .tabbelow {
-  background-color: #e1f2fb;
+  background-color: #f1f9f9;
   padding: 0;
   margin: 0;
+
+
 }
 
 .tabup {
-  background-color: #e1f2fb;
+  background-color: #f1f9f9;
   height: 200px;
 }
 
@@ -105,7 +107,7 @@ tab css */
 .tabcontainer {
 
   width: 100%;
-  background-color: #e1f2fb;
+  background-color: #f1f9f9;
   height: 50%;
 }
 
@@ -227,7 +229,7 @@ tab css */
 
 /* connectservices css */
 .connect {
-  background-color: #e1f2fb;
+  background-color: #f1f9f9;
 }
 
 .column {
@@ -272,15 +274,12 @@ tab css */
 .btmcreatebtn {
   margin-left: 20%;
   margin-right: 10%;
-  height: auto;
+  height: 2vw;
   width: 12vw;
   background-color: #d92027;
-  font-size: 0.8vw;
-  padding-top: 7px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  color: #ffffff;
+  font-size: 1vw;
+  color: #fafafa;
+  padding-top: 4;
   cursor: pointer;
 }
 
@@ -291,7 +290,7 @@ tab css */
 
 .btmlists {
   float: right;
-  
+
 }
 
 .listbtm {
