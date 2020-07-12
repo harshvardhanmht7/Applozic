@@ -1,6 +1,6 @@
 var count = 1;
 
-function Features(evt, cityName, btnid) {
+function Features(evt, tnam, btnid) {
   count = parseInt(btnid, 10);
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,9 +11,8 @@ function Features(evt, cityName, btnid) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tnam).style.display = "block";
   evt.currentTarget.className += " active";
-
 
 }
 
@@ -37,7 +36,7 @@ setInterval(
 
 
 
-
+// slide js
 
 
 var count1 = 0;
