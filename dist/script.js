@@ -42,13 +42,11 @@ setInterval(
 
 
 
-var slideIndex,slides,dots,captionText;
+var slideIndex,slides,dots;
 function initGallery(){
     slideIndex = 0;
     slides=document.getElementsByClassName("imageHolder");
     slides[slideIndex].style.opacity=1;
-
-
 
 
     //add dots
@@ -108,6 +106,6 @@ var timer=null;
 function setTimer(){
     timer=setInterval(function () {
         plusSlides(1) ;
-    },6000);
+    },7000);
 }
 setTimer();
